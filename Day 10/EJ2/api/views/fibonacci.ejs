@@ -1,0 +1,15 @@
+<div class="form-header">
+    <% if (locals.result || locals.res) { %>
+        <% if (locals.result) { %>
+            <h2>Si es palindromo = <%= locals.res %></h2>
+        <%} else { %>
+            <h2>No es palindromo = <%= locals.res %></h2>
+        <% } %>
+    <% } else { %>
+      <h2>Please provide the following values:</h2>
+    <% } %>
+  </div>
+<form action="/api/fibonacci" method="POST">
+    <input type="text" placeholder="A" name="A">
+    <button type="submit">Submit</button>
+</form>
